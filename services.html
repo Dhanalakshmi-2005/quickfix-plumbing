@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Plumbing Services - QuickFix</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <svg class="logo-icon" viewBox="0 0 24 24" width="16" height="20" fill="currentColor">
+                    <path d="M3 6c0-1.1.9-2 2-2h2V2h2v2h6V2h2v2h2c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V6zm0 12h14v-6H3v6zm0-8h14V6H3v4zm9-1h2v2h-2v-2z"/>
+                </svg>
+                <span>QuickFix</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="services.html" class="nav-link active">Services</a></li>
+                <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#reviews" class="nav-link">Reviews</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="btn-login">Login</button>
+                <button class="btn-book-primary" onclick="window.location.href='booking.html'">Book a Plumber</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="services-page">
+        <!-- Header Section -->
+        <section class="services-header">
+            <h1>Professional Plumbing Services</h1>
+            <p>Expert solutions for all your residential and commercial plumbing needs.<br>Reliable, fast, and transparent pricing.</p>
+        </section>
+
+        <!-- Filter Section -->
+        <section class="services-filters">
+            <button class="filter-btn active" data-filter="all">All Services</button>
+            <button class="filter-btn" data-filter="general">General Plumbing</button>
+            <button class="filter-btn" data-filter="emergency">
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor" style="margin-right: 4px;">
+                    <path d="M6 0L0 12h12L6 0zm0 9h-1v-1h1v1zm0-3h-1V4h1v2z"/>
+                </svg>
+                Emergency
+            </button>
+            <button class="filter-btn" data-filter="maintenance">Maintenance</button>
+        </section>
+
+        <!-- Services Grid -->
+        <section class="all-services-grid">
+            <div class="service-card-large" data-category="general">
+                <div class="service-card-image">
+                    <img src="https://images.unsplash.com/photo-1585523657529-c2dc6e56df9c?w=350&h=250&fit=crop" alt="Pipe Leakage Repair">
+                    <span class="service-badge">General</span>
+                </div>
+                <div class="service-card-body">
+                    <h3>Pipe Leakage Repair</h3>
+                    <p>Fast detection and repair of leaking pipes to prevent water damage and high utility bills.</p>
+                    <div class="service-card-footer">
+                        <div class="price-info">
+                            <span class="price-label">Starting from</span>
+                            <span class="price-amount">₹499</span>
+                        </div>
+                        <a href="booking.html?service=pipe-leakage" class="btn-book-small">Book Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service-card-large" data-category="general">
+                <div class="service-card-image">
+                    <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=350&h=250&fit=crop" alt="Tap Repair">
+                    <span class="service-badge">General</span>
+                </div>
+                <div class="service-card-body">
+                    <h3>Tap Repair & Installation</h3>
+                    <p>Fix dripping faucets, low pressure issues, or install brand new modern fixtures.</p>
+                    <div class="service-card-footer">
+                        <div class="price-info">
+                            <span class="price-label">Starting from</span>
+                            <span class="price-amount">₹299</span>
+                        </div>
+                        <a href="booking.html?service=tap-repair" class="btn-book-small">Book Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service-card-large" data-category="general">
+                <div class="service-card-image">
+                    <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=350&h=250&fit=crop" alt="Bathroom Plumbing">
+                    <span class="service-badge">Installation</span>
+                </div>
+                <div class="service-card-body">
+                    <h3>Bathroom Plumbing</h3>
+                    <p>Complete bathroom fittings, shower installations, and concealed piping solutions.</p>
+                    <div class="service-card-footer">
+                        <div class="price-info">
+                            <span class="price-label">Starting from</span>
+                            <span class="price-amount">₹899</span>
+                        </div>
+                        <a href="booking.html?service=bathroom" class="btn-book-small">Book Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service-card-large" data-category="emergency">
+                <div class="service-card-image emergency-card-img">
+                    <img src="https://images.unsplash.com/photo-1585523657529-c2dc6e56df9c?w=350&h=250&fit=crop" alt="Drain Cleaning">
+                    <span class="service-badge emergency">🚨 Emergency</span>
+                </div>
+                <div class="service-card-body">
+                    <h3>Drain Cleaning</h3>
+                    <p>Rapid clearing of blocked sinks, floor drains, and main sewer lines.</p>
+                    <div class="service-card-footer">
+                        <div class="price-info">
+                            <span class="price-label">Starting from</span>
+                            <span class="price-amount emergency-price">₹599</span>
+                        </div>
+                        <a href="booking.html?service=drain-cleaning" class="btn-book-small emergency">Book Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service-card-large" data-category="maintenance">
+                <div class="service-card-image">
+                    <img src="https://images.unsplash.com/photo-1585523657529-c2dc6e56df9c?w=350&h=250&fit=crop" alt="Water Tank Cleaning">
+                    <span class="service-badge">Maintenance</span>
+                </div>
+                <div class="service-card-body">
+                    <h3>Water Tank Cleaning</h3>
+                    <p>Mechanized cleaning of overhead and underground water storage tanks for hygiene.</p>
+                    <div class="service-card-footer">
+                        <div class="price-info">
+                            <span class="price-label">Starting from</span>
+                            <span class="price-amount">₹799</span>
+                        </div>
+                        <a href="booking.html?service=water-tank-cleaning" class="btn-book-small">Book Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service-card-large" data-category="general">
+                <div class="service-card-image">
+                    <img src="https://images.unsplash.com/photo-1585523657529-c2dc6e56df9c?w=350&h=250&fit=crop" alt="Water Heater">
+                    <span class="service-badge">Installation</span>
+                </div>
+                <div class="service-card-body">
+                    <h3>Water Heater / Geyser</h3>
+                    <p>Installation, repair, and maintenance of electric and gas water heaters.</p>
+                    <div class="service-card-footer">
+                        <div class="price-info">
+                            <span class="price-label">Starting from</span>
+                            <span class="price-amount">₹499</span>
+                        </div>
+                        <a href="booking.html?service=water-heater" class="btn-book-small">Book Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service-card-large" data-category="general">
+                <div class="service-card-image">
+                    <img src="https://images.unsplash.com/photo-1585523657529-c2dc6e56df9c?w=350&h=250&fit=crop" alt="Toilet Repair">
+                    <span class="service-badge">General</span>
+                </div>
+                <div class="service-card-body">
+                    <h3>Toilet Repair</h3>
+                    <p>Fixing flush issues, leaks, blockages, or complete seat replacement services.</p>
+                    <div class="service-card-footer">
+                        <div class="price-info">
+                            <span class="price-label">Starting from</span>
+                            <span class="price-amount">₹399</span>
+                        </div>
+                        <a href="booking.html?service=toilet-repair" class="btn-book-small">Book Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service-card-large" data-category="general">
+                <div class="service-card-image">
+                    <img src="https://images.unsplash.com/photo-1585523657529-c2dc6e56df9c?w=350&h=250&fit=crop" alt="Complete Plumbing">
+                    <span class="service-badge">Comprehensive</span>
+                </div>
+                <div class="service-card-body">
+                    <h3>Complete Plumbing</h3>
+                    <p>Full house plumbing setup for new constructions or major renovations.</p>
+                    <div class="service-card-footer">
+                        <div class="price-info">
+                            <span class="price-label">Consultation</span>
+                            <span class="price-amount">Free</span>
+                        </div>
+                        <a href="booking.html?service=complete-plumbing" class="btn-quote">Get Quote</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-items">
+                <div class="faq-item">
+                    <div class="faq-header">
+                        <h3>Do you provide emergency services after hours?</h3>
+                        <svg class="faq-icon" width="12" height="8" viewBox="0 0 12 8" fill="currentColor">
+                            <path d="M1 1l5 5 5-5"/>
+                        </svg>
+                    </div>
+                    <div class="faq-content">
+                        <p>Yes! We offer 24/7 emergency plumbing services. Call our hotline anytime, and we'll dispatch a plumber within 30 minutes.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-header">
+                        <h3>Are your plumbers certified and background-checked?</h3>
+                        <svg class="faq-icon" width="12" height="8" viewBox="0 0 12 8" fill="currentColor">
+                            <path d="M1 1l5 5 5-5"/>
+                        </svg>
+                    </div>
+                    <div class="faq-content">
+                        <p>Absolutely! All our plumbers are certified, insured, and have passed thorough background checks for your safety and peace of mind.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-header">
+                        <h3>Do the prices include materials?</h3>
+                        <svg class="faq-icon" width="12" height="8" viewBox="0 0 12 8" fill="currentColor">
+                            <path d="M1 1l5 5 5-5"/>
+                        </svg>
+                    </div>
+                    <div class="faq-content">
+                        <p>Prices vary by service. Basic labor is included in the starting price. Material costs are quoted separately based on what needs to be replaced.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">QuickFix</div>
+            <div class="footer-links">
+                <a href="#">Company</a>
+                <a href="#">Customer</a>
+                <a href="#">Support</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+            <p class="footer-copy">&copy; 2024 QuickFix Plumbing Services. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Service filtering
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const filter = this.getAttribute('data-filter');
+                
+                // Update active button
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                
+                // Filter services
+                document.querySelectorAll('.service-card-large').forEach(card => {
+                    if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // FAQ toggle
+        document.querySelectorAll('.faq-header').forEach(header => {
+            header.addEventListener('click', function() {
+                const item = this.closest('.faq-item');
+                item.classList.toggle('open');
+            });
+        });
+    </script>
+</body>
+</html>
