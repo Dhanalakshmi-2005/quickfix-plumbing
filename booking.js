@@ -185,7 +185,7 @@ function collectFormData() {
  * Submit data to Google Apps Script
  */
 async function submitToGoogleAppsScript(formData) {
-    if (!GOOGLE_APPS_SCRIPT_URL || GOOGLE_APPS_SCRIPT_URL === 'YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL') {
+    if (!GOOGLE_APPS_SCRIPT_URL || GOOGLE_APPS_SCRIPT_URL === 'https://script.google.com/macros/s/AKfycbwf8yWCYwPd77EvRnro4nCntyDqL1kBifuYaDeS4JBTbudrK-jB8bwHyhRmt-1bP0WTFA/exec') {
         // Development mode: simulate response
         console.warn('Google Apps Script URL not configured. Using mock response.');
         return generateMockResponse(formData);
