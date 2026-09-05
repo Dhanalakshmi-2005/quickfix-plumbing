@@ -6,7 +6,7 @@
 // ========================================
 // CONFIGURATION - UPDATE WITH YOUR GOOGLE APPS SCRIPT URL
 // ========================================
-const GOOGLE_APPS_SCRIPT_URL = 'YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL';
+const GOOGLE_APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwf8yWCYwPd77EvRnro4nCntyDqL1kBifuYaDeS4JBTbudrK-jB8bwHyhRmt-1bP0WTFA/exec';
 // Replace above with your deployed Google Apps Script Web App URL
 // Example: https://script.google.com/macros/d/SCRIPT_ID/useless?
 
